@@ -1,5 +1,10 @@
 /* discourse-glassify/scss/sidebar.scss */
 
+.sidebar-wrapper {
+    padding-top: var(--main-outlet-padding-top) !important;
+    height: calc(var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - var(--main-outlet-padding-top)) !important;
+}
+
 div.sidebar-wrapper::after {
     content: "" !important;
     position: absolute !important;
