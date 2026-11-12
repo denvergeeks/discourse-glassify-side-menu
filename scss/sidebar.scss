@@ -1,220 +1,35 @@
 /* discourse-glassify/scss/sidebar.scss */
 
-/*
-div#main-outlet .show-replies:hover,
-div#main-outlet .show-replies:focus,
-div#main-outlet .show-replies:active,
-div#main-outlet nav.post-controls .show-replies[aria-expanded=true],
-div#main-outlet nav.post-controls .show-replies[aria-expanded=true]:hover,
-div#main-outlet nav.post-controls .show-replies[aria-expanded=true]:focus,
-div#main-outlet nav.post-controls .show-replies[aria-expanded=true]:active,
-div#main-outlet .embedded-posts.bottom .collapse-up:hover,
-div#main-outlet .embedded-posts.bottom .collapse-up:focus,
-div#main-outlet .embedded-posts.bottom .collapse-up:active,
-div#main-outlet .embedded-posts.bottom .collapse-up[aria-expanded=true]:hover,
-div#main-outlet .embedded-posts.bottom .collapse-up[aria-expanded=true]:focus,
-div#main-outlet .embedded-posts.bottom .collapse-up[aria-expanded=true]:active {
-    background-color: aliceblue !important;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, .15) !important;
-    color: var(--tertiary) !important;
-    outline: 1px dotted var(--tertiary) !important;
-    border: none !important;
-}
-
-.embedded-posts.bottom {
-    max-width: calc(95% - 66px) !important;
-    margin: 0 auto !important;
-    padding-bottom: 25px !important;
-}
-*/
-
-.btn-link {
-    padding: 5px 10px !important;
-}
-
-.sidebar-wrapper .sidebar-sections,
-.sidebar-section-wrapper .sidebar-section-header-wrapper:focus-within {
-    background-color: transparent !important;
-}
-
-div.sidebar-wrapper::after {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    clip-path: circle(30% at 10% 50%) !important;
-    
-    /* For Darkest Themes */
-    /* background: linear-gradient(#005090, #6d0025); */
-
-    /* For Medium to Dark Themes */
-    /* background: linear-gradient(#2196f3, #e91e63); */
-
-    /* For Light Themes */
-    background: linear-gradient(#89e2ff, #ffa2c2) !important;
-}
-
-.sidebar-section-wrapper {
-    border-bottom: none !important;
-}
-
-.sidebar-section-wrapper .sidebar-section-header-wrapper {
-    margin-bottom: .25rem !important;
-    padding-right: 0 !important;
-    margin-right: 1em !important;
-}
-
-.sidebar-section-wrapper .sidebar-section-header {
-    font-size: unset !important;
-}
-
-.sidebar-section-wrapper .sidebar-section-content {
-    margin-left: 1em !important;
-    padding-right: 1em !important;
-}
-
-.sidebar-sections.admin-panel .sidebar-section-wrapper .sidebar-section-header-wrapper {
-    margin-bottom: .25rem !important;
-    padding-right: 1rem !important;
-}
-
-.sidebar-sections.admin-panel .sidebar-section-wrapper .sidebar-section-header {
-    font-size: unset !important;
-}
-
-.sidebar-sections.admin-panel .sidebar-section-wrapper .sidebar-section-content {
-    padding-right: 1.5em !important;
-}
-
-.sidebar-wrapper {
-    padding-top: var(--main-outlet-padding-top) !important;
-    height: calc(var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - var(--main-outlet-padding-top)) !important;
-}
-
-.sidebar-wrapper .sidebar-container {
-    border-right: none !important;
-    z-index: 1 !important;
-    background-color: transparent !important;
-}
-
-.sidebar-section-link-wrapper {
-    /* padding: 0.3em var(--d-sidebar-row-horizontal-padding); */
-    /* padding: .3em var(--d-sidebar-row-horizontal-padding) .3em 0; */
-   /* margin: .3em .5em .3em 0; */
-}
-
-.container-test .card {
-    position: relative;
-    width: 280px;
-    height: 450px;
-    margin: 30px;
-            box-shadow: 0px 2px 5px rgb(0 0 0 / 25%) !important;
-            box-shadow: 1px 2px 2px rgb(0 0 0 / 20%) !important;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25) !important;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-.sidebar-section-header {
-    border-radius: 4px !important;
-    padding: .2em .7em !important;
-            box-shadow: 0px 2px 5px rgb(0 0 0 / 25%) !important;
-            box-shadow: 1px 2px 2px rgb(0 0 0 / 20%) !important;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25) !important;
-    overflow: hidden !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
-    backdrop-filter: blur(5px) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-
-
-.sidebar-section-wrapper .sidebar-section-header.sidebar-section-header-collapsable:active,
-.sidebar-section-wrapper .sidebar-section-header.sidebar-section-header-collapsable:hover,
-.sidebar-section-wrapper .sidebar-section-header.sidebar-section-header-collapsable:focus,
-button.sidebar-section-header:active,
-button.sidebar-section-header:hover,
-button.sidebar-section-header:focus {
-    border-radius: 4px !important;
-            box-shadow: 0px 2px 5px rgb(0 0 0 / 25%) !important;
-            box-shadow: 1px 2px 2px rgb(0 0 0 / 20%) !important;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25) !important;
-    background: rgba(255, 255, 255, 0.05) !important;
-    overflow: hidden !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
-    backdrop-filter: blur(5px) !important;
-    color: var(--d-nav-color--active) !important;
-    transform: perspective(1000px) rotateX(4deg) rotateY(352deg) scale3d(1, 1, 1) !important;
-    will-change: transform !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-
-.sidebar-section.sidebar-section-wrapper .sidebar-section-header.sidebar-section-header-collapsable:hover .sidebar-section-header-text,
-.sidebar-section.sidebar-section-wrapper .sidebar-section-header.sidebar-section-header-collapsable:hover .sidebar-section-header-caret .d-icon,
-.sidebar-section.sidebar-section-wrapper.sidebar-section--expanded .sidebar-section-header-text,
-.sidebar-section.sidebar-section-wrapper.sidebar-section--expanded .sidebar-section-header-caret .d-icon {
-    color: var(--d-nav-color--active) !important;
-}
-
-.sidebar-section-link-wrapper .sidebar-section-link,
-.discourse-touch .sidebar-custom-sections,
-/* .btn-flat, */
-.json-editor-btn-collapse {
-    border: 1px solid transparent !important;
-}
-
-.sidebar-section-link-wrapper .sidebar-section-link {
-    align-items: center;
-}
-
-
-
-
-
-
-.sidebar-section-link-wrapper .sidebar-section-link.exact-url-match,
-.sidebar-section-link-wrapper.--hovering .sidebar-section-link,
-.sidebar-section-link-wrapper .sidebar-section-link--active,
-.sidebar-section-link-wrapper .sidebar-section-link.active,
-.sidebar-section-link-wrapper .sidebar-section-link:hover,
-.discourse-touch .sidebar-custom-sections a:active,
-.discourse-touch .sidebar-custom-sections a:hover,
-.btn-flat a:active,
-.btn-flat a:hover,
-.json-editor-btn-collapse a:active,
-.json-editor-btn-collapse a:hover {
-            box-shadow: 0px 2px 5px rgb(0 0 0 / 25%) !important;
-            box-shadow: 1px 2px 2px rgb(0 0 0 / 20%) !important;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25) !important;
-    background: rgba(255, 255, 255, 0.05) !important;
+.sidebar-section-link-wrapper .sidebar-section-link.exact-url-match, .sidebar-section-link-wrapper.--hovering .sidebar-section-link, .sidebar-section-link-wrapper .sidebar-section-link--active, .sidebar-section-link-wrapper .sidebar-section-link.active, .sidebar-section-link-wrapper .sidebar-section-link:hover, .discourse-touch .sidebar-custom-sections a:active, .discourse-touch .sidebar-custom-sections a:hover, .btn-flat a:active, .btn-flat a:hover, .json-editor-btn-collapse a:active, .json-editor-btn-collapse a:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .25) !important;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .2) !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .25) !important;
+    background: rgba(255, 255, 255, .05) !important;
     color: var(--d-nav-color--active) !important;
     overflow: hidden !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
-    border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-top: 1px solid rgba(255, 255, 255, .5) !important;
+    border-left: 1px solid rgba(255, 255, 255, .5) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
     backdrop-filter: blur(5px) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
+    border-right: 1px solid rgba(255, 255, 255, .2) !important;
 }
 
-:root {
-    --d-sidebar-row-height: 1.5em;
-    --d-sidebar-active-font-weight: normal;
-    --sidebar-section-wrapper-padding: ;
+.sidebar-section-link-wrapper .sidebar-section-link.exact-url-match, .sidebar-section-link-wrapper.--hovering .sidebar-section-link, .sidebar-section-link-wrapper .sidebar-section-link--active, .sidebar-section-link-wrapper .sidebar-section-link.active, .sidebar-section-link-wrapper .sidebar-section-link:hover, .discourse-touch .sidebar-custom-sections a:active, .discourse-touch .sidebar-custom-sections a:hover, .btn-flat a:active, .btn-flat a:hover, .json-editor-btn-collapse a:active, .json-editor-btn-collapse a:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .25) !important;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .2) !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .25) !important;
+    background: rgba(255, 255, 255, .05) !important;
+    color: var(--d-nav-color--active) !important;
+    overflow: hidden !important;
+    border-top: 1px solid rgba(255, 255, 255, .5) !important;
+    border-left: 1px solid rgba(255, 255, 255, .5) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(5px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
+    border-right: 1px solid rgba(255, 255, 255, .2) !important;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link, .discourse-touch .sidebar-custom-sections, .json-editor-btn-collapse {
+    border: 1px solid rgba(0, 0, 0, 0) !important;
 }
