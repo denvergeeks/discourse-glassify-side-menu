@@ -157,12 +157,12 @@ button.sidebar-section-header:focus {
 
 /* OVERRIDES for Pyx's Modern Theme */
 #main-outlet-wrapper .sidebar-sections .sidebar-section-wrapper {
-    -webkit-backdrop-filter: unset;
-    backdrop-filter: unset;
-    background: unset;
-    border-radius: unset;
-    border: unset;
-    margin-top: unset;
-    padding-right: unset;
-    padding-left: unset;
+    -webkit-backdrop-filter: unset !important;
+    backdrop-filter: unset !important;
+    background: unset !important;
+    border-radius: unset !important;
+    border: unset !important;
+    margin-top: unset !important;
+    padding-right: unset !important;
+    padding-left: unset !important;
 }
