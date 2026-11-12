@@ -24,6 +24,10 @@ div.sidebar-wrapper::after {
     background: linear-gradient(#89e2ff, #ffa2c2) !important;
 }
 
+.sidebar-section-wrapper .sidebar-section-header {
+    font-size: unset !important;
+}
+
 .sidebar-wrapper .sidebar-container {
     border-right: none !important;
     z-index: 1 !important;
