@@ -19,13 +19,13 @@ div.sidebar-wrapper::after {
     clip-path: circle(30% at 10% 50%) !important;
     
     /* For Darkest Themes */
-    /* background: linear-gradient(#005090, #6d0025); */
+    background: linear-gradient(#005090, #6d0025);
 
     /* For Medium to Dark Themes */
     /* background: linear-gradient(#2196f3, #e91e63); */
 
     /* For Light Themes */
-    background: linear-gradient(#89e2ff, #ffa2c2) !important;
+    /* background: linear-gradient(#89e2ff, #ffa2c2) !important; */
 }
 
 .sidebar-section-wrapper {
