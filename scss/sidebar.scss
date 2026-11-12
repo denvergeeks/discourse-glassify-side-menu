@@ -154,3 +154,15 @@ button.sidebar-section-header:focus {
     --d-sidebar-active-font-weight: normal;
     --sidebar-section-wrapper-padding: ;
 }
+
+/* OVERRIDES for Pyx's Modern Theme */
+#main-outlet-wrapper .sidebar-sections .sidebar-section-wrapper {
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
+    background: unset;
+    border-radius: unset;
+    border: unset;
+    margin-top: unset;
+    padding-right: unset;
+    padding-left: unset;
+}
