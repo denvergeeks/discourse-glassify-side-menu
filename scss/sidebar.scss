@@ -1,8 +1,12 @@
 /* discourse-glassify/scss/sidebar.scss */
 
+.btn-link {
+    padding: 5px 10px !important;
+}
+
 .sidebar-wrapper .sidebar-sections,
 .sidebar-section-wrapper .sidebar-section-header-wrapper:focus-within {
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: transparent !important;
 }
 
 div.sidebar-wrapper::after {
@@ -24,8 +28,41 @@ div.sidebar-wrapper::after {
     background: linear-gradient(#89e2ff, #ffa2c2) !important;
 }
 
+.sidebar-section-wrapper {
+    border-bottom: none !important;
+}
+
+.sidebar-section-wrapper .sidebar-section-header-wrapper {
+    margin-bottom: .25rem !important;
+    padding-right: 0 !important;
+    margin-right: 1em !important;
+}
+
 .sidebar-section-wrapper .sidebar-section-header {
     font-size: unset !important;
+}
+
+.sidebar-section-wrapper .sidebar-section-content {
+    margin-left: 1em !important;
+    padding-right: 1em !important;
+}
+
+.sidebar-sections.admin-panel .sidebar-section-wrapper .sidebar-section-header-wrapper {
+    margin-bottom: .25rem !important;
+    padding-right: 1rem !important;
+}
+
+.sidebar-sections.admin-panel .sidebar-section-wrapper .sidebar-section-header {
+    font-size: unset !important;
+}
+
+.sidebar-sections.admin-panel .sidebar-section-wrapper .sidebar-section-content {
+    padding-right: 1.5em !important;
+}
+
+.sidebar-wrapper {
+    padding-top: var(--main-outlet-padding-top) !important;
+    height: calc(var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - var(--main-outlet-padding-top)) !important;
 }
 
 .sidebar-wrapper .sidebar-container {
@@ -37,16 +74,15 @@ div.sidebar-wrapper::after {
 .sidebar-section-header {
     border-radius: 4px !important;
     padding: .2em .7em !important;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, .25) !important;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, .2) !important;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, .25) !important;
+            box-shadow: 0px 2px 5px rgb(0 0 0 / 25%) !important;
+            box-shadow: 1px 2px 2px rgb(0 0 0 / 20%) !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25) !important;
     overflow: hidden !important;
-    border-top: 1px solid rgba(255, 255, 255, .5) !important;
-    border-left: 1px solid rgba(255, 255, 255, .5) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
     backdrop-filter: blur(5px) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
-    border-right: 1px solid rgba(255, 255, 255, .2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .sidebar-section-wrapper .sidebar-section-header.sidebar-section-header-collapsable:active,
