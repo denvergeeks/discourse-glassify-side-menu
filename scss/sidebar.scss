@@ -85,6 +85,36 @@ button.sidebar-section-header:focus {
     border: 1px solid transparent !important;
 }
 
-.sidebar-section-link-wrapper .sidebar-section-link, .discourse-touch .sidebar-custom-sections, .json-editor-btn-collapse {
-    border: 1px solid rgba(0, 0, 0, 0) !important;
+.sidebar-section-link-wrapper .sidebar-section-link {
+    align-items: center;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link.exact-url-match,
+.sidebar-section-link-wrapper.--hovering .sidebar-section-link,
+.sidebar-section-link-wrapper .sidebar-section-link--active,
+.sidebar-section-link-wrapper .sidebar-section-link.active,
+.sidebar-section-link-wrapper .sidebar-section-link:hover,
+.discourse-touch .sidebar-custom-sections a:active,
+.discourse-touch .sidebar-custom-sections a:hover,
+.btn-flat a:active,
+.btn-flat a:hover,
+.json-editor-btn-collapse a:active,
+.json-editor-btn-collapse a:hover {
+            box-shadow: 0px 2px 5px rgb(0 0 0 / 25%) !important;
+            box-shadow: 1px 2px 2px rgb(0 0 0 / 20%) !important;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: var(--d-nav-color--active) !important;
+    overflow: hidden !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(5px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+:root {
+    --d-sidebar-row-height: 1.5em;
+    --d-sidebar-active-font-weight: normal;
+    --sidebar-section-wrapper-padding: ;
 }
