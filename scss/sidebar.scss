@@ -5,6 +5,10 @@
     height: calc(var(--composer-vh, 1dvh) * 100 - var(--main-outlet-offset, 0px) - var(--main-outlet-padding-top)) !important;
 }
 
+.sidebar-wrapper .sidebar-sections, .sidebar-section-wrapper .sidebar-section-header-wrapper:focus-within {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
 div.sidebar-wrapper::after {
     content: "" !important;
     position: absolute !important;
