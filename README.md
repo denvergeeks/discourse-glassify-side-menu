@@ -1,5 +1,5 @@
-# discourse-glassify
-A frosty glassy effect for various elements of your Discourse site.
+# discourse-glassify-side-menu
+A frosty glassy effect for the sidebar menu of your Discourse site.
 
 by @denvergeeks
 
